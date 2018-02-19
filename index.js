@@ -21,7 +21,7 @@ function addToCart(item) {
 }
 
 function viewCart() {
-<<<<<<< HEAD
+
   const l = cart.length;
 
   if (!l) {
@@ -37,7 +37,6 @@ function viewCart() {
 
     itemsAndPrices.push(`${item} at \$${price}`);
   }
-
   switch(itemsAndPrices.length) {
     case 1:
       break;
@@ -64,6 +63,7 @@ function total() {
   return t;
 }
 
+<<<<<<< HEAD
 function removeFromCart(item) {
   let itemInCart = false;
 
@@ -92,6 +92,7 @@ function placeOrder(cardNumber) {
 
   cart = [];
 }
+=======
 // function removeFromCart(item) {
 //   if (item !== ) {
 //
