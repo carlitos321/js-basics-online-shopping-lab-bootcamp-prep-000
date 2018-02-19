@@ -21,6 +21,7 @@ function addToCart(item) {
 }
 
 function viewCart() {
+<<<<<<< HEAD
   const l = cart.length;
 
   if (!l) {
@@ -35,6 +36,29 @@ function viewCart() {
     let price = itemAndPrice[item];
 
     itemsAndPrices.push(`${item} at \$${price}`);
+=======
+  if (!cart.length) {
+    console.log(`Your shopping cart is empty.`)
+  } else if (cart.length === 1) {
+    for (let i = 0; i < cart.length; i++) {
+      const cartItem = cart[i];
+      const cartItems = Object.keys(cartItem);
+      const cartPrices = Object.values(cartItem);
+      console.log(`In your cart, you have ${cartItems[0]} at $${cartPrices[0]}.`)
+    }
+  } else if (cart.length === 2) {
+    for (let i = 0; i < cart.length; i++) {
+      const cartItem = cart[i];
+      const cartItems = Object.keys(cartItem);
+      const cartPrices = Object.values(cartItem);
+      console.log(`In your cart, you have ${cartItems[0]} at $${cartPrices[0]} and ${cartItems[1]} at $${cartPrices[1]}.`)
+    }
+  } else {
+    const cartItem = cart[i];
+    const cartItems = Object.keys(cartItem);
+    const cartPrices = Object.values(cartItem);
+    console.log(`In your cart, you have ${cartItems[0]} at $${cartPrices[0]} and ${cartItems[1]} at $${cartPrices[1]}.`)
+>>>>>>> 45be02b6c5f79a3f7333eca35de67edcf80bf00e
   }
 
   switch(itemsAndPrices.length) {
@@ -63,6 +87,7 @@ function total() {
   return t;
 }
 
+<<<<<<< HEAD
 function removeFromCart(item) {
   let itemInCart = false;
 
@@ -91,3 +116,19 @@ function placeOrder(cardNumber) {
 
   cart = [];
 }
+=======
+// function removeFromCart(item) {
+//   if (item !== ) {
+//
+//   }
+//
+// }
+
+// function placeOrder(cardNumber) {
+//   if (!cardNumber) {
+//     console.log(`Sorry, we don't have a credit card on file for you.`)
+//   }
+//   return cart = [];
+//   console.log(`Your total cost is ${totalPrice}, which will be charged to the card ${cardNumber}. `)
+// }
+>>>>>>> 45be02b6c5f79a3f7333eca35de67edcf80bf00e
