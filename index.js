@@ -63,7 +63,7 @@ function total() {
   return t;
 }
 
-<<<<<<< HEAD
+
 function removeFromCart(item) {
   let itemInCart = false;
 
