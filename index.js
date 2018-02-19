@@ -92,7 +92,7 @@ function placeOrder(cardNumber) {
 
   cart = [];
 }
-=======
+
 // function removeFromCart(item) {
 //   if (item !== ) {
 //
