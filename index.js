@@ -107,4 +107,3 @@ function placeOrder(cardNumber) {
 //   return cart = [];
 //   console.log(`Your total cost is ${totalPrice}, which will be charged to the card ${cardNumber}. `)
 // }
->>>>>>> 45be02b6c5f79a3f7333eca35de67edcf80bf00e
